@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f6f2;
+    color: #4a3f35;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Top bar styling */
+.top-bar {
+    background-color: #7f4e1e;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: white;
+}
+
+/* Profile image and name in the top bar */
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.profile h1 {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+}
+
+/* Contact info styling */
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact-info p {
+    font-size: 0.95rem;
+    color: white;
+    margin: 5px 10px 5px 0;
+}
+
+/* LinkedIn icon styling */
+.contact-info a {
+    display: block;
+    margin-left: 15px; /* Optional spacing between the email and icon */
+}
+
+.contact-info a img {
+    width: 30px; 
+    height: 30px;
+}
+
+.contact-info a:hover img {
+    opacity: 0.8; /* Hover effect to change the icon's opacity */
+}
+
+/* Section styling */
+section {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    border-left: 3px dotted #a36e48;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #7f4e1e;
+    text-transform: uppercase;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 40px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    background-color: #f0e9e0;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: inline-block;
+    width: 45%;
+    color: #4a3f35;
+}
+
+/* Experience Section */
+.experience .job {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.experience h3 {
+    font-weight: bold;
+    color: #623c17;
+    margin: 5px 0;
+}
+
+.experience p {
+    font-style: italic;
+    color: #4a3f35;
+    margin: 0;
+}
+
+/* Projects Section */
+.projects ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.projects li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.projects li a {
+    color: #a36e48;
+    text-decoration: none;
+}
+
+.projects li a:hover {
+    text-decoration: underline;
+}
+
+/* Languages Section */
+#languages {
+    margin-top: 40px;
+}
+
+#languages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#languages li {
+    background-color: #f0e9e0;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: inline;
+    width: 45%;
+    color: #4a3f35;
+}
+
+/* Certifications Section */
+.certifications p {
+    font-size: 1rem;
+    color: #4a3f35;
+}
+
+.certifications p strong {
+    color: #7f4e1e;
+}
+
+/* Mobile styles */
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    .skills li {
+        width: 100%;
+    }
+
+    .contact-info {
+        font-size: 0.85rem;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .profile h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
